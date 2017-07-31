@@ -1,3 +1,5 @@
+package com.theironyard;
+
 /**
  * Created by gilpratte on 7/26/17.
  */
@@ -33,7 +35,7 @@ public class Address {
 
     @Override
     public String toString() {
-        return "Address{" +
+        return "com.theironyard.Address{" +
           "street='" + street + '\'' +
           ", city='" + city + '\'' +
           ", state='" + state + '\'' +
