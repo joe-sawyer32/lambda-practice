@@ -16,9 +16,7 @@ public class RunnableDemo {
 
         // !! - Write a lambda function here
         //It can also print out something like "Lambda run"
-        Runnable lambdaRun = () -> { // lambda run here
-            System.out.println("Lambda run");
-        };
+        Runnable lambdaRun = () -> System.out.println("Lambda run"); // lambda run here
 
         lambdaRun.run();
 

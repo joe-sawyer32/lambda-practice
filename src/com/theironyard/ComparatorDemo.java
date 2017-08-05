@@ -37,7 +37,10 @@ public class ComparatorDemo {
         print(addresses);
 
         // !! - Write a lambda to sort by city alphabetically
-        Collections.sort(addresses, Comparator.comparing(Address::getCity)); /* lambda here */
+        // Comparator.comparing(Address::getCity)
+        Collections.sort(addresses, (address1, address2) -> { /* lambda here */
+            return address1.getCity().compareTo(address2.getCity());
+        });
 
         System.out.println("\nAfter sorting by city");
         print(addresses);
